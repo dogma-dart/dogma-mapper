@@ -1,0 +1,10 @@
+name: dogma_mapper
+version: 0.0.1
+description: Data mapper for Dart.
+dependencies:
+  dogma_connection:
+    path: ../dogma-connection
+  dogma_data:
+    path: ../dogma-data
+dev_dependencies:
+  test: any
