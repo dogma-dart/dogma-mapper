@@ -40,10 +40,10 @@ class Mapper<Model> {
 
   /// The data connection.
   final Connection connection;
-  /// Deserializes the [Model] data.
-  final ModelEncoder<Model> encoder;
   /// Serializes the [Model] data.
   final ModelDecoder<Model> decoder;
+  /// Deserializes the [Model] data.
+  final ModelEncoder<Model> encoder;
 
   //---------------------------------------------------------------------
   // Construction
@@ -53,7 +53,7 @@ class Mapper<Model> {
   ///
   /// Mapping the [Model] data to and from its serialized form are handled by
   /// the [encoder] and [decoder] respectively.
-  Mapper(this.connection, this.encoder, this.decoder);
+  Mapper(this.connection, {this.decoder, this.encoder});
 
   //---------------------------------------------------------------------
   // Public methods
