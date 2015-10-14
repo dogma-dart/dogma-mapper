@@ -4,7 +4,7 @@
 // the LICENSE file.
 
 /// Contains the [FluentQuery] interface.
-library dogma.mapper.fluent_query;
+library dogma_mapper.fluent_query;
 
 //---------------------------------------------------------------------
 // Imports

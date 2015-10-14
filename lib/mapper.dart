@@ -4,7 +4,7 @@
 // the LICENSE file.
 
 /// Contains the [Mapper] class.
-library dogma.mapper;
+library dogma_mapper.mapper;
 
 //---------------------------------------------------------------------
 // Standard libraries
@@ -17,7 +17,7 @@ import 'dart:async';
 //---------------------------------------------------------------------
 
 import 'package:dogma_connection/connection.dart';
-import 'package:dogma_convert/data.dart';
+import 'package:dogma_convert/convert.dart';
 import 'package:dogma_mapper/fluent_query.dart';
 
 //---------------------------------------------------------------------
