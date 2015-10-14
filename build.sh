@@ -1,6 +1,10 @@
 #!/bin/sh
 set -ex
 
+# Clone dependencies
+git clone https://github.com/dogma-dart/dogma-connection.git ../dogma-connection
+git clone https://github.com/dogma-dart/dogma-convert.git ../dogma-convert
+
 # Get version
 dart --version
 
