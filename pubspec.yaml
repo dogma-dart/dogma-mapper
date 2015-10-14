@@ -4,7 +4,7 @@ description: Data mapper for Dart.
 dependencies:
   dogma_connection:
     path: ../dogma-connection
-  dogma_data:
-    path: ../dogma-data
+  dogma_convert:
+    path: ../dogma-convert
 dev_dependencies:
   test: any

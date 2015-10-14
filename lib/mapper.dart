@@ -17,7 +17,7 @@ import 'dart:async';
 //---------------------------------------------------------------------
 
 import 'package:dogma_connection/connection.dart';
-import 'package:dogma_data/data.dart';
+import 'package:dogma_convert/data.dart';
 import 'package:dogma_mapper/fluent_query.dart';
 
 //---------------------------------------------------------------------
