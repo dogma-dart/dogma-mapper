@@ -59,11 +59,21 @@ class Mapper<Model> {
   // Public methods
   //---------------------------------------------------------------------
 
-  /// Performs the [query] on the data [connection].
+  /// Performs the [query] on the data [connection] returning a single value.
+  ///
+  /// Returns a [Future] containing the model data. The query method uses the
+  /// [decoder] to transform the contents of the query into the [Model].
+  Future<Model> query(FluentQuery<Model> query) async {
+    var value = await connection.query(query.query);
+
+    return decoder.convert(value);
+  }
+
+  /// Performs the [query] on the data [connection] returning all values.
   ///
   /// Returns a [Stream] containing the model data. The query method uses the
   /// [decoder] to transform the contents of the stream into the [Model].
-  Stream<Model> query(FluentQuery<Model> query) {
-    return connection.query(query.query).map((value) => decoder.convert(value));
+  Stream<Model> queryAll(FluentQuery<Model> query) {
+    return connection.queryAll(query.query).map((value) => decoder.convert(value));
   }
 }
