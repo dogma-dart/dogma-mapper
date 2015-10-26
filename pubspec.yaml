@@ -2,9 +2,7 @@ name: dogma_mapper
 version: 0.0.1
 description: Data mapper for Dart.
 dependencies:
-  dogma_connection:
-    path: ../dogma-connection
-  dogma_convert:
-    path: ../dogma-convert
+  dogma_connection: '^0.0.1'
+  dogma_convert: '^0.0.1'
 dev_dependencies:
-  test: any
+  test: '>=0.12.5+1 <0.13.0'
