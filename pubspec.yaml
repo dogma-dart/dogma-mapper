@@ -1,8 +1,12 @@
 name: dogma_mapper
 version: 0.0.1
 description: Data mapper for Dart.
+environment:
+  sdk: '>=1.12.0 <2.0.0'
 dependencies:
   dogma_connection: '^0.0.1'
   dogma_convert: '^0.0.1'
 dev_dependencies:
-  test: '>=0.12.5+1 <0.13.0'
+  test: '^0.12.5+1'
+author: Don Olmstead <don.j.olmstead@gmail.com>
+homepage: http://dogma-dart.github.io/
