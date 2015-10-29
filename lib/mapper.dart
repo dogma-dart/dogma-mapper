@@ -74,6 +74,8 @@ class Mapper<Model> {
   /// Returns a [Stream] containing the model data. The query method uses the
   /// [decoder] to transform the contents of the stream into the [Model].
   Stream<Model> queryAll(FluentQuery<Model> query) {
-    return connection.queryAll(query.query).map((value) => decoder.convert(value));
+    // \TODO Remove cast when generic methods are implemented
+    return connection.queryAll(query.query).map(
+        (value)=> decoder.convert(value)) as Stream<Model>;
   }
 }
